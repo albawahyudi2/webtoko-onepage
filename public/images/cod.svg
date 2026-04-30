@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect x="10" y="25" width="80" height="50" rx="8" fill="#FF5722"/>
+  <text x="50" y="62" font-family="Arial Black, Impact, sans-serif" font-size="32" font-weight="bold" fill="#FFF" text-anchor="middle" letter-spacing="2">COD</text>
+  <text x="50" y="38" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle" letter-spacing="1">BAYAR DI TEMPAT</text>
+</svg>

@@ -73,7 +73,7 @@ function renderProducts() {
   const grid = document.getElementById('productsGrid');
   grid.innerHTML = products.map((p, i) => `
     <div class="product-card reveal reveal-d${i + 1}" data-id="${p.id}">
-      <span class="badge">🔥 ${p.badge}</span>
+      ${p.badge ? `<span class="badge">🔥 ${p.badge}</span>` : ''}
       <div class="img-wrap"><img src="${p.image}" alt="${p.name}" loading="lazy" /></div>
       <div class="info">
         <h3>${p.name}</h3>
