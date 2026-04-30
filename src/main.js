@@ -133,7 +133,6 @@ function getWaLink() {
 function updateWaLinks() {
   const link = getWaLink();
   document.getElementById('btnWa').href = link;
-  document.getElementById('mobileWa').href = link;
   document.getElementById('floatingWa').href = link;
 }
 

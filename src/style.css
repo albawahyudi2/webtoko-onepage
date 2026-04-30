@@ -198,11 +198,6 @@ ul{list-style:none}
 .floating-wa:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(37,211,102,.5)}
 .floating-wa svg{width:28px;height:28px;fill:#fff}
 
-/* ===== MOBILE BOTTOM BAR ===== */
 @media(max-width:768px){
-  .mobile-bar{position:fixed;bottom:0;left:0;right:0;z-index:95;display:flex;gap:8px;padding:10px 16px;background:rgba(7,11,9,.95);backdrop-filter:blur(12px);border-top:1px solid var(--border)}
-  .mobile-bar .btn-wa,.mobile-bar .btn-shopee{flex:1;padding:14px 10px;font-size:.85rem;border-radius:var(--r-sm)}
-  .floating-wa{bottom:80px}
   .section{padding:60px 0}
 }
-@media(min-width:769px){.mobile-bar{display:none}}
