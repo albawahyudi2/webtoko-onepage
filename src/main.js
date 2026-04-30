@@ -175,6 +175,7 @@ function initOrderEvents() {
 function initNavbar() {
   const navbar = document.getElementById('navbar');
   const burger = document.getElementById('navBurger');
+  const navClose = document.getElementById('navClose');
   const links = document.getElementById('navLinks');
 
   window.addEventListener('scroll', () => {
@@ -183,6 +184,10 @@ function initNavbar() {
 
   burger.addEventListener('click', () => {
     links.classList.toggle('open');
+  });
+
+  navClose.addEventListener('click', () => {
+    links.classList.remove('open');
   });
 
   links.querySelectorAll('a').forEach(a => {
