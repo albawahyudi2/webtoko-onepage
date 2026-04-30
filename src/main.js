@@ -73,7 +73,7 @@ function renderProducts() {
   const grid = document.getElementById('productsGrid');
   grid.innerHTML = products.map((p, i) => `
     <div class="product-card reveal reveal-d${i + 1}" data-id="${p.id}">
-      ${p.badge ? `<span class="badge">🔥 ${p.badge}</span>` : ''}
+      <span class="badge">🔥 ${p.badge}</span>
       <div class="img-wrap"><img src="${p.image}" alt="${p.name}" loading="lazy" /></div>
       <div class="info">
         <h3>${p.name}</h3>
@@ -175,7 +175,6 @@ function initOrderEvents() {
 function initNavbar() {
   const navbar = document.getElementById('navbar');
   const burger = document.getElementById('navBurger');
-  const navClose = document.getElementById('navClose');
   const links = document.getElementById('navLinks');
 
   window.addEventListener('scroll', () => {
@@ -184,10 +183,6 @@ function initNavbar() {
 
   burger.addEventListener('click', () => {
     links.classList.toggle('open');
-  });
-
-  navClose.addEventListener('click', () => {
-    links.classList.remove('open');
   });
 
   links.querySelectorAll('a').forEach(a => {
